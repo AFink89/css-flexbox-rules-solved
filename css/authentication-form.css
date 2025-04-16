@@ -12,6 +12,11 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 h2 {
@@ -25,8 +30,43 @@ p {
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
 form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
   border: 1px solid #a9a9a9;
   padding: 20px;
+}
+
+.form-header {
+  margin-bottom: 20px;
+}
+
+.form-header h2 {
+  margin-bottom: 10px;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.form-submit-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%
+}
+
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 100%;
 }
 
 .subtext {
@@ -36,7 +76,7 @@ form {
 
 #sign-in,
 #sign-up {
-  width: 100%;
+  flex: 1 1 400px;
 }
 
 a {
@@ -50,9 +90,9 @@ label {
 
 input {
   width: 100%;
-  height: 30px;
-  padding: 5px;
+  margin: 5px 0 5px 0;
 }
+
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -80,6 +120,19 @@ input[type="submit"]:hover {
   background: #294bbb;
 }
 
-.form select {
+input[type="file"] {
+  margin: 5px;
+}
+
+select {
   height: 30px;
+  width: 100%;
+  padding: 5px;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid gray;
+  margin: 20px 0;
 }
