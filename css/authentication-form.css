@@ -35,7 +35,7 @@ form {
   gap: 20px;
   align-items: flex-start;
   border: 1px solid #a9a9a9;
-  padding: 20px;
+  padding: 30px;
 }
 
 .form-header {
@@ -65,8 +65,19 @@ form {
 .form-input-control {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 6px;
   width: 100%;
+}
+
+.form-checkbox-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-input-control,
+.form-checkbox-control {
+  margin-bottom: 30px;
 }
 
 .subtext {
@@ -93,12 +104,25 @@ input {
   margin: 5px 0 5px 0;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea {
+  height: 30px;
+}
+
 
 input[type="checkbox"],
 input[type="radio"] {
   width: max-content;
   height: max-content;
   padding: 0;
+}
+
+input[type="checkbox"]+label,
+input[type="radio"]+label {
+  font-weight: normal;
 }
 
 input[type="submit"] {
